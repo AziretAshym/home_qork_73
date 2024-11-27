@@ -5,7 +5,7 @@ const port = 8000;
 
 app.get('/', (req, res) => {
     return res.send('Home page');
-})
+});
 
 app.get('/:word', (req, res) => {
     return res.send( `${req.params.word} page`);
